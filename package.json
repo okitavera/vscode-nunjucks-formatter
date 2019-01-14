@@ -49,10 +49,40 @@
       "type": "object",
       "title": "nunjucks template formatter configuration",
       "properties": {
-        "nunjucks-format.frontmatter": {
+        "nunjucksFormat.frontMatterData": {
           "type": "boolean",
           "default": true,
           "description": "Keep YAML front-matter data."
+        },
+        "nunjucksFormat.commline": {
+          "type": "boolean",
+          "default": false,
+          "description": "Force an Empty Line Above Comments"
+        },
+        "nunjucksFormat.spaceclose": {
+          "type": "boolean",
+          "default": false,
+          "description": "End Self-Closing Tags with a Space"
+        },
+        "nunjucksFormat.style": {
+          "type": "boolean",
+          "default": false,
+          "description": "Indent Style/Script independently"
+        },
+        "nunjucksFormat.tagmerge": {
+          "type": "boolean",
+          "default": false,
+          "description": "Merge Empty Tag Sets Into A Single Self-Closing Tag"
+        },
+        "nunjucksFormat.tagsort": {
+          "type": "boolean",
+          "default": false,
+          "description": "Sort Child Items of Each Parent Element tagsort"
+        },
+        "nunjucksFormat.textpreserve": {
+          "type": "boolean",
+          "default": true,
+          "description": "Preserve white space in text Content"
         }
       }
     }

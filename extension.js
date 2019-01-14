@@ -2,7 +2,6 @@ const vscode = require("vscode");
 const prettydiff = require("prettydiff2");
 
 const id = "nunjucks";
-var njkconfig = vscode.workspace.getConfiguration(`${id}-format`);
 
 function format(document, range, options) {
   const result = [];
@@ -17,7 +16,8 @@ function format(document, range, options) {
     inchar: editor.insertSpaces ? " " : "\t"
   };
 
-  njkconfig = { jekyll: njkconfig.frontmatter, ...njkconfig };
+  var njkconfig = vscode.workspace.getConfiguration("nunjucksFormat");
+  njkconfig = { jekyll: njkconfig.frontMatterData, ...njkconfig };
   delete njkconfig.frontmatter;
   const newText = prettydiff({
     ...defconfig,
