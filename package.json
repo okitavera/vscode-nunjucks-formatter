@@ -47,7 +47,7 @@
     ],
     "configuration": {
       "type": "object",
-      "title": "nunjucks template formatter configuration",
+      "title": "Nunjucks Formatter",
       "properties": {
         "nunjucksFormat.frontMatterData": {
           "type": "boolean",
