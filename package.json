@@ -1,0 +1,73 @@
+{
+  "name": "vscode-nunjucks-formatter",
+  "displayName": "Nunjucks Template Formatter",
+  "description": "Formatter for Nunjucks template",
+  "version": "0.1.0",
+  "publisher": "okitavera",
+  "icon": "images/icon.jpg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okitavera/vscode-nunjucks-formatter"
+  },
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onLanguage:nunjucks"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "nunjucks",
+        "aliases": [
+          "HTML Nunjucks",
+          "Nunjucks",
+          "nunjucks",
+          "Njk",
+          "njk"
+        ],
+        "extensions": [
+          ".nunjucks",
+          ".nunjs",
+          ".nunj",
+          ".nj",
+          ".njk",
+          ".html",
+          ".htm",
+          "template",
+          ".tmpl",
+          ".tpl"
+        ],
+        "configuration": "./nunjucks.json"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "nunjucks template formatter configuration",
+      "properties": {
+        "nunjucks-format.frontmatter": {
+          "type": "boolean",
+          "default": true,
+          "description": "Keep YAML front-matter data."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^8.10.25",
+    "typescript": "^3.1.4",
+    "vscode": "^1.1.25"
+  },
+  "dependencies": {
+    "prettydiff2": "^2.2.7"
+  }
+}
