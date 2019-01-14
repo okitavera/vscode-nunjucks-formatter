@@ -10,6 +10,12 @@
 - Respect YAML-frontmatter data
 - Accept other prettydiff2 options (limited), see below
 
+# Installation
+Available at [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=okitavera.vscode-nunjucks-formatter)
+```
+ext install okitavera.vscode-nunjucks-formatter
+```
+
 # Configuration
 
 Keep YAML front-matter data. default: `true`
