@@ -1,8 +1,8 @@
 # Change Log
 
-All notable changes to the "nunjucks-syntax-formatter" extension will be documented in this file.
+## 0.1.1
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Preserve HTML attr by default to preserve boolean like async/checked
 
 ## 0.1.0
 
