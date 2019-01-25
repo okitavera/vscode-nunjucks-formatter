@@ -2,7 +2,7 @@
   "name": "vscode-nunjucks-formatter",
   "displayName": "Nunjucks Template Formatter",
   "description": "Formatter for Nunjucks template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "okitavera",
   "icon": "images/icon.jpg",
   "repository": {
@@ -83,6 +83,11 @@
           "type": "boolean",
           "default": true,
           "description": "Preserve white space in text Content"
+        },
+        "nunjucksFormat.unformatted": {
+          "type": "boolean",
+          "default": true,
+          "description": "Preserve HTML attributes"
         }
       }
     }
