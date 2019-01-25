@@ -12,7 +12,9 @@
 - Accept other prettydiff2 options (limited), see below
 
 ## Installation
+
 Available at [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=okitavera.vscode-nunjucks-formatter)
+
 ```
 ext install okitavera.vscode-nunjucks-formatter
 ```
@@ -20,6 +22,7 @@ ext install okitavera.vscode-nunjucks-formatter
 ## Configuration
 
 ##### Keep YAML front-matter data.
+
 default: `true`
 
 ```json
@@ -27,6 +30,7 @@ default: `true`
 ```
 
 ##### Force an Empty Line Above Comments.
+
 default: `false`
 
 ```json
@@ -34,6 +38,7 @@ default: `false`
 ```
 
 ##### End Self-Closing Tags with a Space.
+
 default: `false`
 
 ```json
@@ -41,6 +46,7 @@ default: `false`
 ```
 
 ##### Indent Style/Script independently.
+
 default: `false`
 
 ```json
@@ -48,6 +54,7 @@ default: `false`
 ```
 
 ##### Merge Empty Tag Sets Into A Single Self-Closing Tag.
+
 default: `false`
 
 ```json
@@ -55,6 +62,7 @@ default: `false`
 ```
 
 ##### Sort Child Items of Each Parent Element tagsort.
+
 default: `false`
 
 ```json
@@ -62,8 +70,17 @@ default: `false`
 ```
 
 ##### Preserve white space in text Content
+
 default: `true`
 
 ```json
 "nunjucksFormat.textpreserve": true
+```
+
+##### Preserve HTML tag and attributes
+
+default: `true`
+
+```json
+"nunjucksFormat.unformatted": true
 ```
