@@ -93,7 +93,7 @@
     }
   },
   "scripts": {
-    "postinstall": "node ./node_modules/vscode/bin/install",
+    "postinstall": "patch-package && node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
@@ -103,6 +103,7 @@
     "vscode": "^1.1.25"
   },
   "dependencies": {
+    "patch-package": "^5.1.2",
     "prettydiff2": "^2.2.7"
   }
 }

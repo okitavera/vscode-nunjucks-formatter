@@ -1,0 +1,13 @@
+patch-package
+--- a/node_modules/prettydiff2/lib/markuppretty.js
++++ b/node_modules/prettydiff2/lib/markuppretty.js
+@@ -1261,9 +1261,6 @@
+                         }
+                     }
+                     tname = tagName(element);
+-                    if (options.html === true && element.charAt(0) === "<" && element.charAt(1) !== "!" && element.charAt(1) !== "?" && (types.length === 0 || types[types.length - 1].indexOf("template") < 0) && options.jsx === false && cftags[tname] === undefined && cftags[tname.slice(1)] === undefined && tname.slice(0, 3) !== "cf_") {
+-                        element = element.toLowerCase();
+-                    }
+                     if (tname === "comment" && element.slice(0, 2) === "{%") {
+                         element = element
+                             .replace(/^(\{%\s*comment\s*%\}\s*)/, "")
