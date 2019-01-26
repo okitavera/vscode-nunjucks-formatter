@@ -1,5 +1,5 @@
 const vscode = require("vscode");
-const prettydiff = require("prettydiff2");
+const prettydiff = require("./vendor/prettydiff2/prettydiff");
 
 const id = "nunjucks";
 
