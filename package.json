@@ -2,7 +2,7 @@
   "name": "vscode-nunjucks-formatter",
   "displayName": "Nunjucks Template Formatter",
   "description": "Formatter for Nunjucks template",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publisher": "okitavera",
   "icon": "images/icon.jpg",
   "repository": {

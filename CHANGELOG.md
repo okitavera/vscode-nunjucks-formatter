@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.3
+
+- Fix tabsize inconsistency causes by prettydiff2 behaviour
+
 ## 0.1.2
 
 - Fix prettydiff2 transforming HTML tag/attr to lowercase
