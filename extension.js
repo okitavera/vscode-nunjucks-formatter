@@ -8,11 +8,12 @@ function format(document, range, options) {
   const content = document.getText(range);
   const editor = vscode.window.activeTextEditor.options;
   const workspace = vscode.workspace.getConfiguration("editor");
+  const indentsize = editor.tabSize || workspace.tabSize;
   const defconfig = {
     source: content,
     lang: "twig",
     mode: "beautify",
-    insize: editor.tabSize || workspace.tabSize,
+    insize: editor.insertSpaces ? indentsize : 1,
     inchar: editor.insertSpaces ? " " : "\t"
   };
 
